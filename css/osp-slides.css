@@ -1,0 +1,15 @@
+.reveal .slides {
+	background-image: url("images/osp_logo_rgba70.png");
+	background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.reveal section.title h1, .reveal section h2 {
+    color: #e11f1f;
+    text-transform: none;
+
+}
+
+.reveal section img {
+	border: none;
+}
