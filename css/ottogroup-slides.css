@@ -1,8 +1,28 @@
+/*
 .reveal .slides {
-  background-image: url("images/otto_group_logo-250x50.png");
+  background-image: url("../images/otto_group_logo-250x50.png");
   background-repeat: no-repeat;
   background-position: right top;
 }
+*/
+
+/* Trick für Hintergundbild mit opacity */
+
+.reveal .slides::after {
+  content: "";
+  background-image: url("../images/otto_group_logo-250x50.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  opacity: 0.5;
+  top: -10px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.reveal .slides { text-align: left; }
 
 .reveal section.title h1, .reveal section h2 {
   color: #e11f1f;
