@@ -1,16 +1,15 @@
 FROM ruby:2.3
-MAINTAINER Bernd Ledig <ledig@working-it.de>
+MAINTAINER Bernd Ledig <bernd.ledig@ottogroup.com>
 
 RUN apt-get update
 RUN apt-get install -y inotify-tools
 
-RUN mkdir -p /opt/adoc-reveal && mkdir /slides
+RUN mkdir -p /opt/adoc-reveal && mkdir -p /slides/html5
 WORKDIR /opt/adoc-reveal
 
 COPY Gemfile .
 RUN bundle install --system
 
-RUN mkdir -p /slides/html5
 COPY . .
 
 CMD ./bin/live-build.sh

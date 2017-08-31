@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t osp-adoc-reveal-processor .
+docker build -t bledig2/adoc-revealjs-processor .

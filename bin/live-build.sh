@@ -2,12 +2,12 @@
 set -e
 
 # copy default css/images to slider folder
-cp -a css /slides/html5/
-cp -a images /slides/html5/
+cp -av css /slides/html5/
+cp -av images /slides/html5/
 cp -a reveal.js /slides/html5/
 
-cp -a /slides/css /slides/html5/
-cp -a /slides/images /slides/html5/
+cp -av /slides/css /slides/html5/
+cp -av /slides/images /slides/html5/
 
 ./bin/build.sh /slides/*.adoc
 
