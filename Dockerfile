@@ -1,4 +1,4 @@
-FROM ruby:2.3
+FROM ruby:2.5
 MAINTAINER Bernd Ledig <bernd.ledig@ottogroup.com>
 
 RUN apt-get update
